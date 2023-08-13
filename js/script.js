@@ -13,8 +13,11 @@ closeElem.addEventListener('click', () => {
 const sidePanelText = document.querySelector('.sidepanel__text span');
 const sidePanelDivider = document.querySelector('.sidepanel__divider');
 const sidePanelLink = document.querySelectorAll('.sidepanel__link svg path');
+const promo = document.querySelector('section');
+
 window.addEventListener('scroll', () => {
     const verticalScrollPx = window.scrollY;
+    const promoHeight = promo.offsetHeight;
 
     function changeColor(scrollSize, item) {
         if (verticalScrollPx >= scrollSize) {
@@ -23,22 +26,9 @@ window.addEventListener('scroll', () => {
             item.classList.remove('dark');
         }
     }
-    changeColor(225, sidePanelText);
-    changeColor(325, sidePanelDivider);
-    sidePanelLink.forEach(el => changeColor(425, el));
-    // if (verticalScrollPx < 225) {
-    //     sidePanelText.style.color = '#f5f5f5';
-    //     sidePanelDivider.style.backgroundColor = '#f5f5f5';
-    //     sidePanelLink.forEach(img => {
-    //         img.style.filter = '#f5f5f5';
-    //     });
-    // } else if (verticalScrollPx >= 225) {
-    //     sidePanelText.style.color = '#2A109E';
-    // } else if (verticalScrollPx >= 325) {
-    //     sidePanelDivider.style.backgroundColor = '#2A109E';
-    // } else if (verticalScrollPx >= 425) {
-    //     sidePanelLink.forEach(link => link.style.fill = '#2A109E');
-    // }
+    changeColor(promoHeight / 3, sidePanelText);
+    changeColor(promoHeight / 2.25, sidePanelDivider);
+    sidePanelLink.forEach(el => changeColor(promoHeight / 1.65, el));
 });
 
 const counters = document.querySelectorAll('.skills__percentage-counter'),
