@@ -7,7 +7,6 @@ $(document).ready(function () {
     responsive: [{
       breakpoint: 992,
       settings: {
-        dots: true,
         arrows: false
       }
     }, ]
