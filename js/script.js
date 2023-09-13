@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger'),
     menu = document.querySelector('.menu'),
-    closeElem = document.querySelector('.menu__close');
+    closeElem = document.querySelector('.menu__close'),
+    menuLink = document.querySelectorAll('.menu__link');
 
 hamburger.addEventListener('click', () => {
     menu.classList.add('active');
@@ -8,6 +9,12 @@ hamburger.addEventListener('click', () => {
 
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
+});
+
+menuLink.forEach(item => {
+    item.addEventListener('click', () => {
+        menu.classList.remove('active');
+    });
 });
 
 const sidePanelText = document.querySelector('.sidepanel__text span');
@@ -37,14 +44,3 @@ const counters = document.querySelectorAll('.skills__percentage-counter'),
 counters.forEach((item, i) => {
     lines[i].style.width = item.innerHTML;
 });
-
-
-// // Плавное появление и исчезание элемента
-// const linkShow = document.querySelector('.sidepanel')
-// document.addEventListener('scroll', () => {
-//     if (window.scrollY >= 3500) {
-//         document.querySelector('.sidepanel').classList.add('hidden');
-//     } else {
-//         document.querySelector('.sidepanel').classList.remove('hidden');
-//     }
-// })
