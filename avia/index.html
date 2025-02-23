@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airline Tickets</title>
+    <link rel="stylesheet" href="css/modern-normalize.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="#">Сorporate clients</a>
+          <a href="#">Airline tickets</a>
+          <a href="#">Help center</a>
+          <a href="#">English</a>
+        </div>
+      </div>
+    </header>
+    <section class="main">
+      <div class="container">
+        <h1>Best airline tickets at the lowest prices</h1>
+        <div class="restype__wrapper">
+          <div class="restype__item active">Airline tickets</div>
+          <div class="restype__item">Railway tickets</div>
+          <div class="restype__item">Buses</div>
+          <div class="restype__item">Hotels <span>-60%</span></div>
+          <div class="restype__item">Insurance</div>
+        </div>
+        <div class="search__wrapper">
+          <div class="search__form">
+            <div class="search__input city_from">
+              <input
+                type="text"
+                id="origin"
+                name="origin"
+                placeholder="Origin"
+              />
+              <label for="origin" class="search__input_label">From</label>
+            </div>
+            <div class="search__input city_to">
+              <input
+                type="text"
+                id="destination"
+                name="destination"
+                placeholder="Destination"
+              />
+              <label for="destination" class="search__input_label">To</label>
+            </div>
+            <div class="search-modal search-modal__cities hidden"></div>
+            <div class="search__input_calendar">
+              <div class="search__input date_dep">
+                <input
+                  type="text"
+                  id="departure"
+                  name="departure"
+                  placeholder="Departure"
+                  readonly
+                />
+                <label for="departure" class="search__input_label"
+                  >Departure</label
+                >
+              </div>
+              <div class="divider_vertical"></div>
+              <div class="search__input date_ret">
+                <input
+                  type="text"
+                  id="return"
+                  name="return"
+                  placeholder="Return"
+                  readonly
+                />
+                <label for="return" class="search__input_label">Return</label>
+              </div>
+              <div class="search-modal search-modal__date topAnimation">
+                <div class="search-modal__date_pages">
+                  <button class="pages__btn" id="prev"><</button>
+                  <div class="month_name" id="month"></div>
+                  <button class="pages__btn" id="next">></button>
+                </div>
+                <div class="search-modal__date_week" id="daysTitle"></div>
+                <div class="search-modal__date_days" id="days"></div>
+              </div>
+            </div>
+            <div class="search__input search__input_pass-class">
+              <input
+                type="text"
+                id="pass-class"
+                name="pass-class"
+                value=""
+                placeholder="Choose tickets type"
+                readonly
+              />
+              <label for="pass-class" class="search__input_label"
+                >Passengers and class</label
+              >
+            </div>
+            <div class="search-modal search-modal__pass-class"></div>
+          </div>
+          <button class="search__btn">Search</button>
+        </div>
+      </div>
+    </section>
+    <section class="opportunities">
+      <div class="container">
+        <div class="opportunities__wrapper">
+          <div class="opportunities__box">
+            <div class="opportunities__descr">
+              <h3 class="opportunities__subtitle">
+                Manage your tickets in Telegram
+              </h3>
+              <ul class="opportunities__text">
+                <li>Access to tickets and account</li>
+                <li>Agent support</li>
+                <li>FAQ</li>
+              </ul>
+              <button class="opportunities__btn">See options</button>
+            </div>
+            <img
+              src="img/telegram.jpg"
+              alt="telegram"
+              class="opportunities__img opportunities__img_tg"
+            />
+          </div>
+          <div class="opportunities__box">
+            <div class="opportunities__descr">
+              <h3 class="opportunities__subtitle">
+                Bus tickets around China and Europe
+              </h3>
+              <ul class="opportunities__text">
+                <li>Easy price comparison</li>
+                <li>Up-to-date schedule</li>
+              </ul>
+              <button class="opportunities__btn">Find tickets</button>
+            </div>
+            <img
+              src="img/bus.png"
+              alt="bus"
+              class="opportunities__img opportunities__img_bus"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="recommendation">
+      <div class="container">
+        <div class="rcmd__wrapper">
+          <div class="rcmd__box box_w70">
+            <h3>Popular destinations</h3>
+            <div class="rcmd__box_wrapper rcmd__box_wrapper_dest"></div>
+          </div>
+          <div class="rcmd__box box_w30">
+            <h3>TOP-10 Airlines</h3>
+            <div class="rcmd__box_wrapper rcmd__box_wrapper_comp"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="helpful-info">
+      <div class="container">
+        <div class="helpful-info__wrapper">
+          <div class="helpful-info__box box_w70">
+            <h3>Hot airfare deals</h3>
+            <div class="helpful-info__item">
+              <div class="helpful-info__descr">
+                <h4 class="helpful-info__descr_header">
+                  How to find discount airline tickets online
+                </h4>
+                <div class="helpful-info__descr_text">
+                  On our website you can buy airline tickets or make an early
+                  booking. Promotions, discounts and special offers that are
+                  constantly offered by leading low-cost airlines allow you to
+                  buy cheap airline tickets without leaving home. If you want to
+                  save money and buy cheaper air tickets, pay attention to
+                  flights with connections. But time as a precious currency for
+                  a traveler - direct flights help to save, even if they cost
+                  more than connecting tickets.
+                </div>
+              </div>
+              <div class="helpful-info__descr">
+                <h4 class="helpful-info__descr_header">Customer support</h4>
+                <div class="helpful-info__descr_text">
+                  Which ticket to book for a child? Where do I enter my visa
+                  details? Can I change departure dates? How to check in extra
+                  baggage? Our customer support operators know the answers to
+                  all questions about flights. We support your reservations
+                  24/7/365, in Ukrainian, Russian and English. We will always
+                  help you to choose, pay or make changes to your ticket quickly
+                  and conveniently! With the help of convenient search you can
+                  order airline tickets online cheaply and safely.
+                </div>
+              </div>
+              <div class="helpful-info__descr">
+                <h4 class="helpful-info__descr_header">
+                  Bonus program for regular customers
+                </h4>
+                <div class="helpful-info__descr_text">
+                  For buying airline tickets on our website you will receive
+                  bonuses of 1% of the transaction amount. Once you have
+                  accumulated a sufficient number of points, you can use them to
+                  pay for airline tickets for your next purchases. The maximum
+                  discount you can get thanks to the bonus program is 25%.
+                </div>
+              </div>
+              <div class="helpful-info__descr">
+                <h4 class="helpful-info__descr_header">
+                  Cheapest airline tickets
+                </h4>
+                <div class="helpful-info__descr_text">
+                  How and where to buy cheap air tickets? Cooperation with 750
+                  airlines allows us to form flexible fares and offer our
+                  customers the best conditions. Our flight aggregator site
+                  promptly processes your requests and provides all available
+                  options. You can use filters and sort offers by carrier,
+                  departure time and other parameters.
+                </div>
+              </div>
+              <div class="helpful-info__descr">
+                <h4 class="helpful-info__descr_header">Airfare comparison</h4>
+                <div class="helpful-info__descr_text">
+                  You can always book very cheap airline tickets to Ukraine,
+                  Europe and other parts of the world with us. Our price
+                  trending system will determine the best time to buy, as well
+                  as suggest high and low season for traveling on certain
+                  routes.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="helpful-info__box box_w30">
+            <h3>Frequent questions</h3>
+            <div class="helpful-info__item item__faq">
+              <a href="#" class="faq__question">How to book a flight</a
+              ><a href="#" class="faq__question">How to pay for airfare</a
+              ><a href="#" class="faq__question">How to check-in for a flight</a
+              ><a href="#" class="faq__question"
+                >How to return an airline ticket</a
+              ><a href="#" class="faq__question">Bonus program</a
+              ><a href="#" class="faq__question">All topics</a>
+            </div>
+            <div class="helpful-info__item item__mailing">
+              <div class="mailing__descr">
+                <div class="mailing__descr_text">Best travel deals</div>
+                <img src="img/notebook.png" alt="" class="mailing__descr_img" />
+              </div>
+              <div class="mailing__input">
+                <div class="alert">!</div>
+                <input type="mail" placeholder="Email" />
+                <button><img src="icons/arrow-right.svg" alt="send" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logos">
+          <img src="img/Logos/iata.png" alt="" class="footer__logo_img" />
+          <img src="img/Logos/pci.png" alt="" class="footer__logo_img" />
+          <img src="img/Logos/visa.jpg" alt="" class="footer__logo_img" />
+          <img src="img/Logos/mscard.jpeg" alt="" class="footer__logo_img" />
+        </div>
+        <div class="footer__content">
+          <div class="footer__content_item">
+            <h4>Countries</h4>
+            <ul>
+              <li>Spain</li>
+              <li>Turkey</li>
+              <li>Egypt</li>
+              <li>Georgia</li>
+              <li>Poland</li>
+              <li>France</li>
+            </ul>
+            <a href="#" class="footer__content_item-more">All countries →</a>
+          </div>
+          <div class="footer__content_item">
+            <h4>Cities</h4>
+            <ul>
+              <li>Kishinev</li>
+              <li>Dubai</li>
+              <li>Warsaw</li>
+              <li>Prague</li>
+              <li>Paris</li>
+              <li>Frankfurt</li>
+            </ul>
+            <a href="#" class="footer__content_item-more">All cities →</a>
+          </div>
+          <div class="footer__content_item">
+            <h4>Destinations</h4>
+            <ul>
+              <li>Kishinev - Istanbul</li>
+              <li>Kishinev - Antalya</li>
+              <li>Warsaw - Toronto</li>
+              <li>Warsaw - Paris</li>
+              <li>Kishinev - Tbilisi</li>
+              <li>Warsaw - Istanbul</li>
+            </ul>
+            <a href="#" class="footer__content_item-more">All destinations →</a>
+          </div>
+          <div class="footer__content_item">
+            <h4>Airports</h4>
+            <ul>
+              <li>F. Chopin (Warsaw)</li>
+              <li>Frankfurt International</li>
+              <li>Kishenev Airport</li>
+              <li>Fiumicino (Rome)</li>
+              <li>Istanbul Airport</li>
+              <li>Charles De Gaulle (Paris)</li>
+            </ul>
+            <a href="#" class="footer__content_item-more">All airports →</a>
+          </div>
+          <div class="footer__content_item">
+            <h4>Airlines</h4>
+            <ul>
+              <li>Turkish Airlines</li>
+              <li>Wizz Air Ukraine</li>
+              <li>Qatar Airways</li>
+              <li>Ryanair</li>
+              <li>Air Baltic</li>
+            </ul>
+            <a href="#" class="footer__content_item-more">All airlines →</a>
+          </div>
+          <div class="footer__content_item">
+            <h4>Our services</h4>
+            <ul>
+              <li>Airlines rating</li>
+              <li>Price comparison</li>
+              <li>Flight schedule</li>
+              <li>Promotions</li>
+            </ul>
+            <a href="#" class="footer__content_item-more">Website map →</a>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer__social">
+          <div class="footer__social_box">
+            <button class="footer__social_btn">Affiliate program</button>
+            <button class="footer__social_btn btn_black">
+              <img src="icons/google-play.png" alt="" />
+              Google Play
+            </button>
+            <button class="footer__social_btn btn_black">
+              <img src="icons/app-store.png" alt="" />
+              App Store
+            </button>
+          </div>
+          <div class="footer__social_box">
+            <div class="footer__social_round">
+              <a href="#"><img src="icons/facebook.svg" alt="facebook" /></a>
+            </div>
+            <div class="footer__social_round">
+              <a href="#"><img src="icons/instagram.svg" alt="instagram" /></a>
+            </div>
+            <div class="footer__social_round">
+              <a href="#"><img src="icons/telegram.svg" alt="telegram" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
