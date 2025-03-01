@@ -365,3 +365,178 @@ html {
 .footer .underlined {
   text-decoration: underline;
 }
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+
+  .title__colored {
+    font-size: 38px;
+  }
+
+  .title__big {
+    font-size: 70px;
+  }
+
+  .intensive__item {
+    width: 300px;
+  }
+
+  .skills__item {
+    width: 175px;
+  }
+
+  .skills__round {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skills__img {
+    max-width: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .title__colored {
+    font-size: 32px;
+  }
+
+  .title__big {
+    font-size: 56px;
+  }
+
+  .intensive {
+    padding: 60px 0;
+  }
+
+  .intensive__title,
+  .info__title,
+  .skills__title {
+    font-size: 28px;
+  }
+
+  .intensive__subtitle {
+    font-size: 22px;
+  }
+
+  .intensive__wrapper {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+
+  .info {
+    padding: 70px 0;
+    min-height: 500px;
+  }
+
+  .info__title {
+    text-align: center;
+  }
+
+  .info__img {
+    display: none;
+  }
+
+  .info__text {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .skills__wrapper {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 25px;
+  }
+
+  .skills__item {
+    width: 224px;
+  }
+
+  .gift__img {
+    max-inline-size: 20%;
+  }
+
+  .gift__descr {
+    margin-top: 50px;
+    font-size: 26px;
+  }
+
+  .gift .btn {
+    margin-top: 50px;
+  }
+
+  .webinar__title {
+    font-size: 32px;
+  }
+
+  .webinar__subtitle {
+    font-size: 26px;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .logo__img {
+    width: 60px;
+  }
+
+  .promo h1 {
+    margin-top: 40px;
+  }
+
+  .title__colored,
+  .intensive__title,
+  .info__title,
+  .skills__title {
+    font-size: 26px;
+  }
+
+  .title__big {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .intensive__subtitle {
+    font-size: 20px;
+  }
+
+  .skills__round {
+    width: 118px;
+    height: 118px;
+  }
+
+  .skills__img {
+    max-width: 60px;
+  }
+
+  .gift__img {
+    max-inline-size: 30%;
+  }
+
+  .gift__descr {
+    font-size: 24px;
+  }
+
+  .webinar__img {
+    width: 400px;
+    height: 200px;
+  }
+
+  .webinar__info {
+    margin: 20px auto 0 auto;
+    max-width: 400px;
+  }
+}
